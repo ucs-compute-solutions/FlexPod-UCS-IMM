@@ -1,6 +1,5 @@
 ---
-# Create Server Profile Template for Fibre Channel Boot from SAN 
-
+# Create Server Profile Template for Fibre Channel Boot from SAN
 - name: "Configure Server Profile Template for Fibre Channel Boot"
   vars:
         api_info: &api_info_assign_fc

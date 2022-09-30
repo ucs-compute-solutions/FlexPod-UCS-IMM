@@ -34,7 +34,6 @@
     resource_path: /bios/Policies
     query_params:
       $filter: "Name eq '{{ name_of_bios_policy }}'"
-
   register:  bios_policy_details
 
 # Get FC Boot Order Policy for Service Profile Template if FC is being configured
@@ -71,10 +70,8 @@
     resource_path: /boot/PrecisionPolicies
     query_params:
       $filter: "Name eq '{{ iscsi_boot_order_policy_name }}'"
-
   register:  iscsi_boot_order_policy_details
   when: configure_iscsi == 'true' 
-
 
 # Get IMC Access Policy for Service Profile Template
 - name: "Get IMC Access Policy Details"
@@ -112,7 +109,7 @@
 
   register:  ipmi_policy_details
 
-# Get Local Ueer Policy for Service Profile Template
+# Get Local User Policy for Service Profile Template
 - name: "Get Local User Policy Details"
   vars:
     api_info: &api_info_LocalUser
@@ -185,7 +182,6 @@
   register:  fc_lan_connectivity_policy_details
   when: configure_fc == 'true' 
 
-
 # Get iSCSI LAN Connectivity Policy for Service Profile Template if FC is being configured
 - name: "Get iSCSI LAN Connectivity Policy Details"
   vars:
@@ -201,7 +197,6 @@
     resource_path: /vnic/LanConnectivityPolicies
     query_params:
       $filter: "Name eq '{{ name_of_iscsi_lan_connectivity_policy }}'"
-
   register:  iscsi_lan_connectivity_policy_details
   when: configure_iscsi == 'true' 
 

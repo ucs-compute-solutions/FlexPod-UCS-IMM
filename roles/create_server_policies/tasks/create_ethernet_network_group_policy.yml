@@ -29,7 +29,7 @@
   register: management_network_group_policy
 
 
-- name: "Configure Ethernet Network Group Policy for VDS"
+- name: "Configure Ethernet Network Group Policy for vDS"
   vars:
     api_info: &api_info_vmotion
       api_private_key: "{{ api_private_key }}"

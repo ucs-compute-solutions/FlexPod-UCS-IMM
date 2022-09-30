@@ -43,7 +43,7 @@
             "WwpnPool": "{{ wwpn_pool_san_a_details.api_response.Moid }}",
             "Placement": {
               "SwitchId": "A",
-              "Id": "MLOM",
+              "Id": "{{ vic_slot_id }}",
               "Uplink": 0
             },
             "PersistentBindings": false,
@@ -68,7 +68,7 @@
             "WwpnPool": "{{ wwpn_pool_san_b_details.api_response.Moid }}",
             "Placement": {
               "SwitchId": "B",
-              "Id": "MLOM",
+              "Id": "{{ vic_slot_id }}",
               "Uplink": 0
             },
             "PersistentBindings": false,
@@ -93,13 +93,13 @@
             "WwpnPool": "{{ wwpn_pool_san_a_details.api_response.Moid }}",
             "Placement": {
               "SwitchId": "A",
-              "Id": "MLOM",
+              "Id": "{{ vic_slot_id }}",
               "Uplink": 0
             },
             "PersistentBindings": false,
             "FcNetworkPolicy": "{{ fc_network_policy_san_a.api_response.Moid }}",
             "FcQosPolicy": "{{ fc_qos_policy.api_response.Moid }}",
-            "FcAdapterPolicy": "{{ fc_adapter_policy.api_response.Moid}}",
+            "FcAdapterPolicy": "{{ fc_nvme_initiator_adapter_policy.api_response.Moid}}",
             "StaticWwpnAddress": "",
             "SanConnectivityPolicy": "{{ san_connectivity_policy.api_response.Moid }}",
             "Order": 6
@@ -119,13 +119,13 @@
             "WwpnPool": "{{ wwpn_pool_san_b_details.api_response.Moid }}",
             "Placement": {
               "SwitchId": "B",
-              "Id": "MLOM",
+              "Id": "{{ vic_slot_id }}",
               "Uplink": 0
             },
             "PersistentBindings": false,
             "FcNetworkPolicy": "{{ fc_network_policy_san_b.api_response.Moid }}",
             "FcQosPolicy": "{{ fc_qos_policy.api_response.Moid }}",
-            "FcAdapterPolicy": "{{ fc_adapter_policy.api_response.Moid}}",
+            "FcAdapterPolicy": "{{ fc_nvme_initiator_adapter_policy.api_response.Moid}}",
             "StaticWwpnAddress": "",
             "SanConnectivityPolicy": "{{ san_connectivity_policy.api_response.Moid }}",
             "Order": 7
