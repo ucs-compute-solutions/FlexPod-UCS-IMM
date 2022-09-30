@@ -2,7 +2,7 @@
 
  This repository contains Ansible playbooks to configure  Cisco UCS in Intersight Managed Mode (IMM). This repository can be used for setting up UCS in following Cisco Validated Design (CVD): https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_vmware_7u2.html (with minor changes) and has also been updated to support the end-to-end 100G FlexPod described at https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ucs_xseries_e2e_ontap_design.html. For configuring the remaining components of the FlexPod, the following repository can be utilized: https://github.com/ucs-compute-solutions/FlexPod-UCSM-M6. In near future, a combined repository will be developed to configure all the components at the same time. This repository does not configure the UCS domain profile or policies associated with the USC domain profile. 
 
-![UCSX-IMM](https://user-images.githubusercontent.com/89957595/180018656-1fe7d2e2-bc08-42a0-9d6a-b4b1f9edd57f.png)
+![UCSX-IMM](UCS-IMM-Ansible.png)
 
 # Intersight Configuration
 
